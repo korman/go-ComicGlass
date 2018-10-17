@@ -2,6 +2,9 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/itsjamie/gin-cors"
+	"github.com/korman/go-ComicGlass/handler"
+	"time"
 )
 
 func Init() {
@@ -19,7 +22,7 @@ func Init() {
 
 	getTitleList := router.Group("/")
 	{
-		getTitleList
+		getTitleList.GET("index", handler.Index)
 	}
 
 	router.Run(":8111")
