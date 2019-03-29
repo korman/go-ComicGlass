@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 
-	"go-ComicGlass/router"
+	"github.com/korman/go-ComicGlass/router"
 )
 
 func main() {
 	fmt.Println("vim-go")
 	router.Init()
 }
+ 
