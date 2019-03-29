@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/korman/go-ComicGlass/router"
+	"go-ComicGlass/router"
 )
 
 func main() {
